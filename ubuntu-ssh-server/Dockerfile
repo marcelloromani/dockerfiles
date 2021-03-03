@@ -12,7 +12,8 @@ RUN apt-get -qy update  \
     links2         \
     binutils       \
     sudo           \
- && apt-get -y autoremove
+ && apt-get -y autoremove \
+ && rm -rf /var/lib/apt/lists/*
 
 COPY files/motd /etc/motd
 COPY files/sudoers_admin /etc/sudoers.d/admin
