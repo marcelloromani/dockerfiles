@@ -1,6 +1,6 @@
 .PHONY: build push help
 
-IMAGE_NAME="marcelloromani1975/ubuntu-ssh-server:16.04-1"
+IMAGE_NAME="marcelloromani1975/ubuntu-ssh-server:16.04-2"
 
 help:
 	@echo "Docker image:"
