@@ -5,7 +5,7 @@ on:
       - "main"
 
 jobs:
-  docker-build:
+  docker-ce-client:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,6 +18,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./docker-ce-client
           file: ./Dockerfile
           push: false
